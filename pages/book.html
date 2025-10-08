@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Tickets</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Book tickets for Amuay Wildlife Park and experience Venezuela's wildlife up close.">
+        <meta name="keywords" content="Amuay Wildlife Park, wildlife, eco-tourism, tickets, booking">
+        <link rel="icon" href=".\..\assets\logo\logo.png" type="image/png">
+        <link rel="stylesheet" href=".\..\css\common.css">
+        <link rel="stylesheet" href=".\..\css\book.css">
+        <script src=".\..\javascript\jquery.js"></script>
+        <script src=".\..\javascript\common.js"></script>
+        <script src=".\..\javascript\book.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="popup-bg">
+        </div>
+        <div class="popup">
+            <div class="popup-close-btn">
+                <img src=".\..\assets\common\cross-white.png" alt="Close Button">
+            </div>
+            <div class="popup-title">
+                Payment Successful!
+            </div>
+            <div class="popup-msg">
+                See you soon at Amuay Wildlife Park
+            </div>
+        </div>
+        <div class="side-menu">
+            <div class="close-btn">
+                <img src=".\..\assets\common\cross-white.png" alt="Close Button">
+            </div>
+            <div class="side-menu-title">Menu</div>
+            <div class="menu-items">
+                <div class="nav-link">
+                    <a href=".\..\index.html" class="link">Home</a>
+                </div>
+                <div class="nav-link">
+                    <a href=".\book.html" class="link">Tickets</a>
+                </div>
+                <div class="nav-link">
+                    <a href=".\wildlife.html" class="link">Wildlife</a>
+                </div>
+                <div class="nav-link">
+                    <a href=".\volunteer.html" class="link">Volunteer</a>
+                </div>
+                <div class="nav-link">
+                    <a href=".\about.html" class="link">About Us</a>
+                </div>
+                <div class="nav-link">
+                    <a href=".\contact.html" class="link">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="hamburger-menu">
+            <img src=".\..\assets\common\hamburger.png" alt="Open Menu Button">
+        </div>
+        <div class="main-bg">
+            <div class="hero-and-content">
+                <div class="header">
+                    <a class="header-logo-and-text" href="..\index.html">
+                        <img class="header-logo" src=".\..\assets\logo\logo.png" alt="Amuay Wildlife Park Logo">
+                        <p class="header-text">Amuay Wildlife Park</p>
+                    </a>
+                    <div class="nav-bar">
+                        <div class="nav-link">
+                            <a href=".\..\index.html" class="link">Home</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href=".\book.html" class="link">Tickets</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href=".\wildlife.html" class="link">Wildlife</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href=".\volunteer.html" class="link">Volunteer</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href=".\about.html" class="link">About Us</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href=".\contact.html" class="link">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero">
+                    <p class="hero-title">EXPLORE <span>THE</span> WILDERNESS!</p>
+                    <p class="hero-subtitle">BOOK <span>YOUR SLOT TODAY!</span></p>
+                    <div class="date-picker-section">
+                        <div class="date-picker-section-header">
+                            <p class="date-picker-section-title">Select a Date</p>
+                        </div>
+                        <div class="dates">
+                            <div class="scroll-dates-section">
+                                <div class="date-cards">
+                                    <div>
+                                        <button class="scroll-btn scroll-btn-left" id="scroll-left">
+                                            <img class="nav-arrow left-arrow" src=".\..\assets\common\left-arrow.png" alt="Move Calendar Right">
+                                        </button>
+                                    </div>
+                                    <div class="date-card-with-pointer">
+                                        <div class="date-card" id="date-card-1">
+                                            <p class="day-of-month"></p>
+                                            <p class="month-year"></p>
+                                        </div>                                    
+                                        <div class="triangle fill-transparent" id="date-card-1-triangle"></div>
+                                    </div>
+                                    <div class="date-card-with-pointer">
+                                        <div class="date-card" id="date-card-2">
+                                            <p class="day-of-month"></p>
+                                            <p class="month-year"></p>
+                                        </div>                                    
+                                        <div class="triangle fill-transparent" id="date-card-2-triangle"></div>
+                                    </div>
+                                    <div class="date-card-with-pointer">
+                                        <div class="date-card" id="date-card-3">
+                                            <p class="day-of-month"></p>
+                                            <p class="month-year"></p>
+                                        </div>                                    
+                                        <div class="triangle fill-transparent" id="date-card-3-triangle"></div>
+                                    </div>
+                                    <div class="date-card-with-pointer">
+                                        <div class="date-card" id="date-card-4">
+                                            <p class="day-of-month"></p>
+                                            <p class="month-year"></p>
+                                        </div>                                    
+                                        <div class="triangle fill-transparent" id="date-card-4-triangle"></div>
+                                    </div>
+                                    <div class="date-card-with-pointer">
+                                        <div class="date-card" id="date-card-5">
+                                            <p class="day-of-month"></p>
+                                            <p class="month-year"></p>
+                                        </div>                                    
+                                        <div class="triangle fill-transparent" id="date-card-5-triangle"></div>
+                                    </div>
+                                    <div class="date-card-with-pointer">
+                                        <div class="date-card" id="date-card-6">
+                                            <p class="day-of-month"></p>
+                                            <p class="month-year"></p>
+                                        </div>                                    
+                                        <div class="triangle fill-transparent" id="date-card-6-triangle"></div>
+                                    </div>
+                                    <div>
+                                        <button class="scroll-btn scroll-btn-right" id="scroll-right">
+                                            <img class="nav-arrow right-arrow" src=".\..\assets\common\right-arrow.png" alt="Move Calendar Left">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-date-section">
+                                <div class="custom-date-card date-card-max datepicker-container" onclick="openDatePicker()">    
+                                    <div class="calendar-ico">
+                                        <img src=".\..\assets\pages\booking\calendar.png" alt="Image of calendar">
+                                    </div>
+                                    <div class="month-year">Select Date</div>
+                                    <input type="date" id="datepicker" class="hidden-date-input" onchange="handleDateChange()">
+                                </div>             
+                                <div class="triangle fill-transparent"></div>
+                                <div class="custom-date-card date-card-min datepicker-container" onclick="openDatePicker()">    
+                                    <div class="month-year" id="month-year-min"></div>
+                                    <input type="date" id="datepicker" class="hidden-date-input" onchange="handleDateChange()">
+                                </div> 
+                            </div>
+                        </div>
+                        <div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="booking-details">
+                        <div class="date-info">
+                            <p class="bd-section-head">Selected Date</p>
+                            <p class="bd-day-of-month" id="bd-day-of-month">20th</p>
+                            <p class="bd-month" id="bd-month">March 2025</p>
+                        </div>
+                        <div class="ticket-details">
+                            <p class="bd-section-head">Book Tickets For</p>
+                            <table class="bd-table">
+                                <tr>
+                                    <td class="th t-index">Catagory</td>
+                                    <td class="th t-rate"><p class="content-centre">Rate Per Head</p></td>
+                                    <td class="th"><p class="content-centre">Quantity</p></td>
+                                    <td class="th"><p class="content-centre">Sub-total <span class="currency">(VES)</span></p></td>
+                                </tr>
+                                <tr>
+                                    <td class="t-section t-index">Regular</td>
+                                    <td class="t-value t-rate">150</td>
+                                    <td class="t-value">                                                                   
+                                        <div class="number-input-container">
+                                            <button class="scroll-btn change-ticket-btn" onclick="changeValue(-1, this)">-</button>
+                                            <input type="number" class="numberBox" value="0" min="0" max="100">
+                                            <button class="scroll-btn change-ticket-btn" onclick="changeValue(1, this)">+</button>
+                                        </div>
+                                    </td>
+                                    <td class="t-value"><p id="total-regular">0</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="t-section t-index">Children (under 12)</td>
+                                    <td class="t-value t-rate">80</td>
+                                    <td class="t-value">                                                               
+                                        <div class="number-input-container">
+                                            <button class="scroll-btn change-ticket-btn" onclick="changeValue(-1, this)">-</button>
+                                            <input type="number" class="numberBox" value="0" min="0" max="100">
+                                            <button class="scroll-btn change-ticket-btn" onclick="changeValue(1, this)">+</button>
+                                        </div>
+                                    </td>
+                                    <td class="t-value"><p id="total-child">0</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="t-section t-index">Student</td>
+                                    <td class="t-value t-rate">120</td>
+                                    <td class="t-value">                                                           
+                                        <div class="number-input-container">
+                                            <button class="scroll-btn change-ticket-btn" onclick="changeValue(-1, this)">-</button>
+                                            <input type="number" class="numberBox" value="0" min="0" max="100">
+                                            <button class="scroll-btn change-ticket-btn" onclick="changeValue(1, this)">+</button>
+                                        </div>
+                                    </td>
+                                    <td class="t-value"><p id="total-student">0</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="t-section t-index"></td>
+                                    <td class="t-value t-rate"></td>
+                                    <td class="t-value total-cell">Total <span class="currency">(VES)</span></td>
+                                    <td class="t-value total-value"><p id="total">0</p></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <form class="quote" id="popup-form">
+                            <p class="bd-section-head">Make Payment</p>
+                            <p class="name-label">Full Name<span class="mandate">*</span></p>
+                            <input class="text-input name-input" type="text" required>
+                            <p class="email-label">Email<span class="mandate">*</span></p>
+                            <input class="text-input email-input" type="text" required>
+                            <p class="phone-label">Phone Number<span class="mandate">*</span></p>
+                            <input class="text-input phone-input" type="text" required>
+                            <div class="learn-more-btn popup-enabled-btn">
+                                <button class="button button-green popup-enabled-btn">
+                                    <div class="btn-elements">
+                                        <img src=".\..\assets\common\Paw-ico-black.png" class="paw-ico">
+                                        <span>Make Payment</span>
+                                        <img src=".\..\assets\common\right-arrow-black.png" class="arrow-ico">
+                                    </div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="open-hours">
+                        <div>
+                            <p class="open-hours-header">OPEN HOURS</p>
+                        </div>
+                        <table class="open-hours-table">
+                            <tr>
+                                <td>Monday</td>
+                                <td class="timing">9:00 - 18:00</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td class="timing">9:00 - 18:00</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td class="timing">9:00 - 18:00</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td class="timing">9:00 - 18:00</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td class="timing">9:00 - 18:00</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td class="timing">9:00 - 18:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td class="timing">9:00 - 18:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="paw-trails">
+                    <img src=".\..\assets\common\paw-trail-footer.png">
+                </div>
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src=".\..\assets\logo\logo.png">
+                    </div>
+                    <div class="about">
+                        <p class="footer-title">About</p>
+                        <p><a href=".\contact.html">Contact Us</a></p>
+                        <p><a href=".\about.html">About Us</a></p>
+                    </div>
+                    <div class="find-us">
+                        <p class="footer-title">Find Us</p>
+                        <p>Amuay Wildlife Park</p>
+                        <p>Carretera Coro-Punto Fijo</p>
+                        <p>Sector Amuay</p>
+                        <p>Península de Paraguaná</p>
+                        <p>Falcón State</p>
+                        <p>ZIP Code: 4156</p>
+                    </div>
+                    <div class="socials">
+                        <p class="footer-title">Socials</p>
+                        <img src=".\..\assets\common\instagram.png" class="social-logo">
+                        <img src=".\..\assets\common\tiktok.png" class="social-logo">
+                        <img src=".\..\assets\common\x.png" class="social-logo">
+                        <img src=".\..\assets\common\whatsapp.png" class="social-logo">
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

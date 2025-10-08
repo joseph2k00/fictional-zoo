@@ -1,0 +1,282 @@
+/* Hero Section */
+.hero {
+    color: white;
+    font-family: Montserrat;
+}
+
+.discover-wilderness {
+    width: 700px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Montserrat;
+}
+.last-card {
+    display: none !important;
+}
+.discover-wilderness h1 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.discover-wilderness .small {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 53px;
+    letter-spacing: 0%;
+    text-align: center;
+    display: inline-block;
+}
+
+.discover-wilderness p {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Content Section */
+.content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 0;
+    min-height: 400px;
+    margin-top: 40px;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.wildlife-section {
+    margin-bottom: 80px;
+    font-family: Montserrat;
+}
+
+.wildlife-section:last-child {
+    margin-bottom: 0;
+}
+
+.wildlife-section h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    font-family: Montserrat;
+}
+
+/* Animal Slider */
+.animal-slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: Montserrat;
+}
+
+.animal-slider {
+    display: flex;
+    gap: 60px;
+    margin: 0 20px;
+}
+
+.Image-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+    font-family: Montserrat;
+}
+
+.Image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    z-index: 1;
+    font-family: Montserrat;
+}
+
+.Image-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.Image-card:hover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+}
+
+.card-overlay h3 {
+    font-size: 1.5rem;
+    margin: 0 0 15px 0;
+    color: #90CD2D;
+    font-family: Montserrat;
+}
+
+.card-overlay p {
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.4;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.Image-card .card-title {
+    background: white;
+    color: #90CD2D;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    font-family: Montserrat;
+}
+
+.Image-card:hover .card-title {
+    opacity: 0;
+}
+
+.slider-arrow {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    margin: 0 15px;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+.slider-arrow img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.slider-arrow:hover {
+    background-color: #BB4A26;
+}
+
+.prev-arrow:hover img {
+    content: url('../assets/common/left-arrow-white.png');
+}
+
+.next-arrow:hover img {
+    content: url('../assets/common/right-arrow-white.png');
+}
+
+.prev-arrow {
+    padding-right: 2px;
+}
+
+.next-arrow {
+    padding-left: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    .discover-wilderness {
+        padding: 20px 8px;
+        width: 95%;
+    }
+
+    .discover-wilderness h1 {
+        font-size: 1.5rem;
+        line-height: 1.1;
+        margin-bottom: 12px;
+    }
+
+    .discover-wilderness .small {
+        font-size: 20px;
+        line-height: 1.1;
+        margin: 0 4px;
+    }
+
+    .discover-wilderness p {    
+        font-size: 0.9rem;
+        line-height: 1.3;
+        padding: 0 8px;
+        max-width: 98%;
+        margin: 0 auto;
+    }
+
+    .animal-slider-container {
+        padding: 0 10px;
+    }
+
+    .animal-slider {
+        gap: 20px;
+        margin: 0 10px;
+        overflow-x: hidden;
+    }
+
+    .Image-card {
+        width: 200px;
+        flex: 0 0 auto;
+        height: 450px;
+    }
+
+    .Image-card:nth-child(3) {
+        display: none;
+    }
+
+    .slider-arrow {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+    }
+
+    .slider-arrow img {
+        width: 15px;
+        height: 15px;
+    }
+}

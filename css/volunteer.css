@@ -1,0 +1,276 @@
+/* Volunteer Section */
+.volunteer-section {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.volunteer-section h1 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.volunteer-section h1 span {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 53px;
+    letter-spacing: 0%;
+    text-align: center;
+    display: inline-block;
+}
+
+.volunteer-description {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+/* Volunteer Images */
+.volunteer-images {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.volunteer-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Join Section */
+.join-section {
+    display: flex;
+    margin: 0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    background: white;
+}
+
+.form-image {
+    width: 33%;
+}
+
+.form-image img {
+    width: 100%;
+}
+
+.form-container {
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.form-container h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 53px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #90CD2D;
+    margin-bottom: 20px;
+}
+
+.form-container > p {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 0px;
+    text-align: center;
+    color: #90CD2D;
+    margin-bottom: 40px;
+}
+
+.volunteer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.form-group label {
+    color: #333;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.required {
+    color: red;
+    margin-left: 2px;
+}
+.send-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: transparent;
+    color: #90CD2D;
+    border: 2px solid #90CD2D;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 30%;
+    align-self: center;
+    transition: all 0.3s ease;
+}
+
+.send-button:hover {
+    background: #90CD2D;
+    color: white;
+}
+
+.send-button img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) saturate(100%) invert(77%) sepia(12%) saturate(1601%) hue-rotate(43deg) brightness(96%) contrast(87%);
+}
+
+.send-button:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(72deg) brightness(103%) contrast(105%);
+}
+
+@media screen and (max-width: 768px) {
+    .volunteer-images {
+        display: none;
+    }
+
+    .volunteer-section {
+        padding: 30px 10px;
+    }
+
+    .volunteer-section h1 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .volunteer-section h1 span {
+        font-size: 24px;
+        line-height: 1.2;
+        margin: 0 6px;
+    }
+
+    .volunteer-description {
+        font-size: 16px;
+        line-height: 1.4;
+        padding: 0 10px;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .join-section {
+        flex-direction: column;
+    }
+
+    .form-image {
+        width: 100%;
+        height: 120px;
+    }
+
+    .form-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .form-container {
+        width: 92%;
+        padding: 30px 15px;
+    }
+
+    .form-container h2 {
+        font-size: 28px;
+        line-height: 1.2;
+        margin-bottom: 12px;
+    }
+
+    .form-container > p {
+        font-size: 16px;
+        line-height: 1.3;
+        margin-bottom: 25px;
+    }
+
+    .volunteer-form {
+        width: 100%;
+        max-width: 100%;
+        gap: 15px;
+    }
+
+    .form-group input {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .send-button {
+        padding: 6px 20px;
+        font-size: 0.95rem;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .volunteer-section h1 {
+        font-size: 60px;
+    }
+    .volunteer-section h1 span {
+        font-size: 40px;
+    }
+    .volunteer-description {
+        font-size: 22px;
+        font-weight: 600;
+        max-width: 950px;
+    }
+    .form-container h2 {
+        font-size: 40px;
+    }
+    .form-container > p {
+        font-size: 24px;
+    }
+    .form-group label {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    .volunteer-form {
+        margin-top: 20px;
+        max-width: 600px;
+    }
+    input {
+        height: 40px;
+    }
+    .send-button {
+        font-size: 20px;
+        margin-top: 30px;
+        width: 30%;
+        height: 20%;
+    }
+}

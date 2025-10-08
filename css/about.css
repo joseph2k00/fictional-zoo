@@ -1,0 +1,311 @@
+.main-content {
+    padding: 80px 0 60px;
+    color: white;
+    font-family: Montserrat;
+}
+
+/* About Section */
+.about-section {
+    text-align: center;
+    padding: 20px 20px 80px;
+    font-family: Montserrat;
+}
+
+.about-section h1 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 53px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.about-description {
+    max-width: 1400px;
+    margin: 0 auto;
+    line-height: 1.4;
+    font-size: 22px;
+    font-weight: 600;
+    white-space: pre-line;
+    font-family: Montserrat;
+}
+
+/* Preserving Nature Section */
+.preserving-nature {
+    display: flex;
+    width: 100%;
+    margin: 60px 0;
+    font-family: Montserrat;
+}
+
+.preserving-image {
+    flex: 1;
+    max-width: 40%;
+}
+
+.preserving-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    aspect-ratio: 4/3;
+}
+
+.preserving-content {
+    flex: 1.5;
+    padding: 60px 80px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+}
+
+.preserving-content h2 {
+    font-family: Montserrat;
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: #90CD2D;
+    text-align: center;
+    font-weight: 700;
+}
+
+.preserving-content p {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    max-width: 900px;
+}
+
+.visit-text {
+    font-family: Montserrat;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: auto;
+    text-align: center;
+    max-width: 900px;
+}
+
+/* Awards Section */
+.awards-section {
+    text-align: center;
+    padding: 100px 20px;
+    font-family: Montserrat;
+}
+
+.awards-section h2 {
+    font-family: Montserrat;
+    font-size: 2rem;
+    margin-bottom: 80px;
+}
+
+.award-text, .recognition-text {
+    font-family: Montserrat;
+    color: #BB4A26;
+    font-size: 3rem;
+}
+
+.and-text {
+    font-family: Montserrat;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.awards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.awards-row {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.award {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 300px;
+}
+
+.award img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.award h3 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+    word-wrap: break-word;
+    width: 100%;
+    margin: 0;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .preserving-nature {
+        flex-direction: column;
+        margin: 40px 0;
+    }
+
+    .preserving-image {
+        max-width: 100%;
+    }
+
+    .preserving-content {
+        padding: 30px 20px;
+    }
+
+    .preserving-content h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .preserving-content p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+
+    .visit-text {
+        font-size: 1.2rem;
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+
+    .awards-section {
+        padding: 60px 20px;
+    }
+
+    .awards-section h2 {
+        margin-bottom: 60px;
+        font-size: 1.5rem;
+        line-height: 1.6;
+    }
+
+    .award-text, .recognition-text {
+        font-size: 1.8rem;
+        line-height: 1.4;
+        display: block;
+        margin: 5px 0;
+    }
+
+    .and-text {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        display: block;
+        margin: 5px 0;
+    }
+
+    .awards-grid {
+        gap: 40px;
+    }
+
+    .awards-row {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .award {
+        flex: 0 0 calc(50% - 15px);
+        max-width: none;
+    }
+
+    .award img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .award h3 {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+    .preserving-content h2 {
+        font-size: 2rem;
+        line-height: 1.4;
+    }
+
+    .preserving-content p {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+
+    .visit-text {
+        margin-top: 25px;
+        padding: 0 10px;
+    }
+
+    .award {
+        flex: 0 0 100%;
+    }
+
+    .awards-section h2 {
+        margin-bottom: 50px;
+        line-height: 1.5;
+    }
+
+    .award-text, .recognition-text {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        margin: 4px 0;
+    }
+
+    .and-text {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        margin: 4px 0;
+    }
+
+    .award h3 {
+        line-height: 1.5;
+        margin-top: 15px;
+        padding: 0 8px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .main-content, .about-section {
+        padding: 0px;
+    }
+    .about-section h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .about-description {
+        font-size: 18px;
+        /* line-height: 0; */
+        margin-bottom: 0;
+    }
+    .preserving-content h2 {
+        font-size: 40px;
+    }
+    .preserving-content p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}

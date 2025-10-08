@@ -1,0 +1,456 @@
+body {
+    width: 100vw;
+}
+.header {
+    position: absolute;
+    z-index: 2;
+    width: -webkit-fill-available;
+}
+.hero {
+    line-height: 0;
+}
+.hero img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+.main-bg {
+    background: linear-gradient(to bottom, #BB4A26, #90CD2D, #1981B4);
+}
+.hero-title {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    margin-top: 40vh;
+}
+.hero-title-text {
+    font-size: 30px;
+    margin: 20px;
+    margin-left: 40px;
+}
+.hero-subtitle-text {
+    font-size: 60px;
+    font-weight: bolder;
+    margin: 20px;
+    margin-left: 40px;
+}
+video{
+    width: 100%;
+}
+.book-btn {
+    position: absolute;
+    z-index: 2;
+    margin-top: 80vh;
+    width: 100%;
+    justify-items: center;
+}
+.book-btn a{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+.learn-more-btn a{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    font-family: Montserrat;
+}
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+.explore {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.explore h2 {
+    margin-top: 0;
+    padding-top: 9rem;
+    color: white;
+}
+.explore-writeup p {
+    color: white;
+    width: 48%;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+.spotlight {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.spotlight h2 {
+    margin-top: 0;
+    padding-top: 2rem;
+    color: white;
+}
+.spotlight-stacked-cards {
+    width: 100%;
+    display: flex;
+}
+.spotlight-card  {
+    position: relative;
+    width: 20%;
+}
+.spotlight-card img {
+    z-index: 1;
+    width: 100%;
+}
+
+.spotlight-card:hover img {
+    filter: blur(15px);
+    transition: 0.5s ease;
+}
+.spotlight-stacked-cards div p {
+    overflow-wrap: normal;
+    filter: blur(0px);
+    display: none;
+    position: absolute;
+    z-index: 15;
+    width: 80%;
+    margin-left: 10%;
+}
+.spotlight-card:hover p {
+    display: block;
+    transition: 0.5s ease;
+}
+.animal-name {
+    color: #90CD2D !important;
+    margin-top: 100px;
+}
+.animal-writeup {
+    margin-top: 130px;
+    line-height: 30px;
+}
+.conservation {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+}
+.conservation-img {
+    width: 34%;
+}
+.conservation-img img {
+    width: 100%;
+}
+.conservation-typo {
+    width: 66%;
+    background-image: url(".\\..\\assets\\pages\\home\\conservation-in-action-bg-image.png");
+}
+.heading {
+    font-weight: 600;
+    color: white;
+    justify-content: center;
+    display: flex;
+    margin-top: 8%;
+    font-size: 23px;
+}
+.sub-heading {
+    font-weight: 700;
+    color: #BB4A26;
+    justify-content: center;
+    margin-top: 0;
+    display: flex;
+    font-size: 40px;
+}
+.conservation-writeup {
+    color: white;
+    line-height: 25px;
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+    font-size: 17px;
+}
+.conservation-writeup-container {
+    padding-left: 85px;
+    padding-right: 85px;
+}
+.learn-more-btn {
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+}
+.subscribe {
+    display: flex;
+    width: 100%;
+    background-color: #F8F8F8;
+    height: 29.5rem;
+}
+.mail-img, .subscribe-form {
+    width: 50%;
+}
+.mail-img {
+    align-content: center;
+}
+.mail-img img {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+.subscribe-form form{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.subscribe-form form input {
+    width: 100%;
+}
+.subscribe-form-header {
+    color: #90CD2D;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: bolder;
+}
+.subscribe-form form p {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+.subscribe-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    padding: 1rem;
+}
+.subscribe-checkbox input {
+    width: 3% !important;
+}
+.unsub-msg {
+    text-align: center;
+    font-size: small;
+}
+.submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.paw-trail img {
+    margin-left: 35vw;
+    margin-top: 93vh;
+    width: 16vw;
+    position: absolute;
+}
+.animal-name {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+.animal-writeup {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+.mobile-hero {
+    display: none;
+}
+input {
+    width: 90% !important;
+}
+/* Responsive styles */
+@media (max-width: 1024px) {
+    video {
+        display: none;
+    }
+    .header, .book-btn {
+        position: relative;
+    }
+    .hero-writeup {
+        color: white;
+    }
+    .book-btn {
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+    .mobile-hero {
+        display: block;
+        background-image: url('./../assets/pages/home/bg-img-hero.jpg');
+    }
+    .light-writeup {
+        text-align: center;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .strong-writeup {
+        text-align: center;
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 600;
+    }
+    .hero-and-content {
+        display: none;
+    }
+    .explore {
+        text-align: center;
+        line-height: 30px;
+    }
+    .explore h2 {
+        padding-top: 50px;
+        margin-bottom: 0px;
+    }
+    input {
+        width: 85% !important;
+    }
+    .explore-writeup {
+        justify-items: center;
+    }
+    .explore-writeup p {
+        margin: 0px;
+        width: 90%;
+    }
+    .spotlight h2 {
+        padding-top: 50px;
+        margin-bottom: 0%;
+    }
+    .animal-name {
+        color: #ffffff !important;
+        margin-top: 10%;
+    }
+    .animal-writeup {
+        margin-top: 0%;
+    }
+    .conservation-img {
+        display: none;
+    }
+    .conservation-typo {
+        width: 100%;
+    }
+    .conservation-writeup-container {
+        padding: 20px;
+        padding-top: 0;
+        padding-bottom: 0%;
+    }
+    .sub-heading {
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+    .heading{
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .learn-more-btn {
+        margin-top: 0;
+    }
+    .mail-img {
+        display: none;
+    }
+    .spotlight-stacked-cards {
+        display: block;
+        width: 100%;
+    }
+    .spotlight-stacked-cards img, .spotlight-stacked-cards div {
+        width: 100%;
+    }
+    .spotlight-stacked-cards div img:hover {
+        filter: blur(0px);
+    }
+    .spotlight-stacked-cards div p {
+        display: block;
+        position: relative;
+        /* width: 100%; */
+    }
+    .subscribe-form {
+        width: 100%;
+    }
+    .subscribe-form-header {
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .subscribe-checkbox p {
+        line-height: 15px;
+    }
+    .checkbox {
+        width: 25% !important;
+    }
+    .unsub-msg {
+        line-height: 15px;
+    }
+}
+ 
+/* Optimised for Full HD Display */
+@media (min-width: 1440px) {
+    .paw-trail img {
+        margin-top: 89vh;
+        margin-left: 42vw;
+        width: 9vw;
+    }
+    .explore h2 {
+        padding-top: 7rem;
+    }
+}
+@media (min-width: 1600px) {
+    .conservation-writeup {
+        color: white;
+        line-height: 40px;
+        text-align: center;
+        font-weight: 500;
+        width: 100%;
+        font-size: 25px;
+    }
+    .heading {
+        font-weight: 700;
+        color: white;
+        justify-content: center;
+        display: flex;
+        margin-top: 8%;
+        font-size: 30px;
+    }
+    .sub-heading {
+        font-weight: 700;
+        color: #BB4A26;
+        justify-content: center;
+        margin-top: 0;
+        display: flex;
+        font-size: 60px;
+    }
+    .conservation-writeup-container {
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+    .subscribe {
+        display: flex;
+        width: 100%;
+        background-color: #F8F8F8;
+        height: 520px;
+    }
+    .subscribe-form-header {
+        color: #90CD2D;
+        font-size: 35px;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        font-weight: bolder;
+    }
+    .form-label {
+        margin-bottom: 10px !important;
+        margin-top: 30px !important;
+    }
+    .subscribe-form form p {
+        font-size: 20px;
+        font-weight: 600 !important;
+    }
+    .submit {
+        margin-top: 50px !important;
+    }
+    .paw-trail img {
+        margin-top: 86vh;
+        margin-left: 40vw;
+        width: 200px;
+    }
+}
